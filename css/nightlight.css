@@ -1,0 +1,97 @@
+html,
+body {
+  width: auto;
+  height: auto;
+  margin: auto;
+  background-color: #040408;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+.drop-text {
+  position: absolute;
+  text-transform: uppercase;
+  right: 12px;
+  top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.hero-img {
+  width: 100%;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.logo-img {
+  width: 400px;
+  position: absolute;
+  z-index: 2;
+}
+
+.description {
+  display: flex;
+  width: 50%;
+  max-width: 500px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+a {
+  color: white;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 45%;
+  }
+
+  .description {
+    width: 80%;
+  }
+}
